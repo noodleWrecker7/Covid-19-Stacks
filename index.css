@@ -1,0 +1,67 @@
+/*
+ * Copyright (c) 2020.
+ * Developed by Adam Hodgkinson
+ * Last modified 12/4/4 2:13
+ *
+ * Everything on this page, and other pages on the website, is subject to the copyright of Adam Hodgkinson, it may be freely used, copied, distributed and/or modified, however, full credit must be given
+ * to me and any derived works should be released under the same license. I am not held liable for any claim, this software is provided as-is and without any warranty.
+ *
+ * I do not own any of the following content and is used under their respective licenses:
+ *     Fontawesome
+ *     Photonstorm's phaser.js
+ */
+
+body{
+    background-color: #fff0f4;
+    padding: 0;
+    margin: 0;
+}
+
+
+.title-bar {
+    width: 100%;
+    background-color: green;
+    margin: 0;
+    margin-top: -21px;
+    font-family: Montserrat, sans-serif;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    border-top: solid green 21px;
+    box-sizing: border-box;
+
+}
+h1{
+    text-align: center;
+
+}
+
+.main-section {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-column-gap: 1.5%;
+}
+
+.column{
+    background-color: #039be5;
+}
+
+.box{
+    width: 98%;
+    height: 0;
+
+    background-color: red;
+    margin: 1%;
+}
+
+.box-head{
+    padding-bottom: 38%;
+}
+
+.square{
+    padding-bottom: 98%;
+}
