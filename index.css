@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2020.
  * Developed by Adam Hodgkinson
- * Last modified 12/4/4 2:13
+ * Last modified 13/4/4 23:17
  *
  * Everything on this page, and other pages on the website, is subject to the copyright of Adam Hodgkinson, it may be freely used, copied, distributed and/or modified, however, full credit must be given
  * to me and any derived works should be released under the same license. I am not held liable for any claim, this software is provided as-is and without any warranty.
@@ -11,7 +11,7 @@
  *     Photonstorm's phaser.js
  */
 
-body{
+body {
     background-color: #fff0f4;
     padding: 0;
     margin: 0;
@@ -20,7 +20,7 @@ body{
 
 .title-bar {
     width: 100%;
-    background-color: green;
+    background-color: #5f9586;
     margin: 0;
     margin-top: -21px;
     font-family: Montserrat, sans-serif;
@@ -30,38 +30,99 @@ body{
     box-sizing: border-box;
 
 }
-h1{
+
+h1 {
     text-align: center;
 
 }
 
 .main-section {
-    padding-left: 10%;
-    padding-right: 10%;
+    font-family: Montserrat, sans-serif;
+}
+
+.region-title {
+    text-align: center;
+    font-size: xx-large;
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    grid-column-gap: 1.5%;
+    display: flex;
+    flex-wrap: wrap;
+    /*padding-left: 2%; !*to counteract extra column gap at end *!*/
+    /*margin-left: auto;
+    margin-right: auto;*/
+    /*width: fit-content;*/
+    flex-direction: row;
+    /*min-width: min-content;*/
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-evenly;
+    margin-top: 5%;
 }
 
-.column{
-    background-color: #039be5;
+.column {
+    /*background-color: #039be5;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 14%;
+    min-width: 250px;
+    margin-left: 0.3%;
+    margin-right: 0.3%;
+    /*max-width: fit-content;*/
+    margin-bottom: 4%;
+
+
 }
 
-.box{
-    width: 98%;
+.box {
+    width: 68%;
     height: 0;
-
-    background-color: red;
+    margin-right: auto;
+    margin-left: auto;
+    /*background-color: red;*/
     margin: 1%;
 }
 
-.box-head{
-    padding-bottom: 38%;
+.box-img-container {
+    padding-bottom: 70%;
+    width: max-content;
+    max-width: 60%;
+
 }
 
-.square{
+.box-img {
+    display: block;
+    max-width: 100%;
+
+}
+
+.box-title-container {
+    padding-bottom: 20%;
+    text-align: center;
+    /*padding*/
+}
+
+.box-desc-container {
+    padding-bottom: 20%;
+    text-align: center;
+    /*padding*/
+}
+
+.box-stat {
+    padding-bottom: 30%;
+}
+
+h3 {
+}
+
+.box-stat > p {
+    text-align: end;
+    padding-left: 20%;
+}
+
+
+.square {
     padding-bottom: 98%;
 }

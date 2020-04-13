@@ -1,7 +1,7 @@
 <!--
   ~ Copyright (c) 2020.
   ~ Developed by Adam Hodgkinson
-  ~ Last modified 12/4/4 2:10
+  ~ Last modified 13/4/4 23:17
   ~
   ~ Everything on this page, and other pages on the website, is subject to the copyright of Adam Hodgkinson, it may be freely used, copied, distributed and/or modified, however, full credit must be given
   ~ to me and any derived works should be released under the same license. I am not held liable for any claim, this software is provided as-is and without any warranty.
@@ -17,22 +17,88 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
 </head>
 <body>
-<div class="title-bar"><h1 class="title">COVID-19 Statistics as Minecraft Stacks.</h1></div>
-ur gay
+<div class="title-bar"><h1 class="title">Global COVID-19 Statistics as Minecraft Stacks.</h1></div>
 <div class="main-section">
+<!--    <h2 class="region-title" id="region-name">Global</h2>-->
     <div class="grid-container">
         <div class="column">
-            <div class="box box-head">1</div>
-            <div class="box square">2</div>
-            <div class="box square">3</div>
-        </div>
-        <div class="column">2</div>
-        <div class="column">3</div>
-        <div class="column">4</div>
-        <div class="column">5</div>
+            <div class="box box-img-container"><img class="box-img" alt="Minecraft Chest" src="img/Dirt_Stack.png">
+            </div>
+            <div class="box box-title-container"><h2>Stacks:</h2></div>
+            <div class="box box-desc-container"><p>That would be this many stacks</p></div>
+            <div class="box box-stat"><h3>Cases:</h3>
+                <p id="stat-stack-cases">5 Stacks, 6 Items</p></div>
+            <div class="box box-stat"><h3>Deaths:</h3>
+                <p id="stat-stack-deaths">5 Stacks, 6 Items</p></div>
+            <div class="box box-stat"><h3>Recovered:</h3>
+                <p id="stat-stack-recovered">5 Stacks, 6 Items</p></div>
 
+        </div>
+        <div class="column">
+            <div class="box box-img-container"><img class="box-img" alt="Minecraft Chest" src="img/Crafting_Table.png">
+            </div>
+            <div class="box box-title-container"><h2>Crafting Tables:</h2></div>
+            <div class="box box-desc-container"><p>That would fill this many crafting tables</p></div>
+            <div class="box box-stat"><h3>Cases:</h3>
+                <p id="stat-craft-cases">1234 Tables, 5 Stacks, 6 Items</p></div>
+            <div class="box box-stat"><h3>Deaths:</h3>
+                <p id="stat-craft-deaths">1234 Tables, 5 Stacks, 6 Items</p></div>
+            <div class="box box-stat"><h3>Recovered:</h3>
+                <p id="stat-craft-recovered">1234 Tables, 5 Stacks, 6 Items</p></div>
+
+        </div>
+        <div class="column">
+            <div class="box box-img-container"><img class="box-img" alt="Minecraft Chest" src="img/Furnace.png"></div>
+            <div class="box box-title-container"><h2>Furnaces:</h2></div>
+            <div class="box box-desc-container"><p>That would take this much coal to cook</p></div>
+            <div class="box box-stat"><h3>Cases:</h3>
+                <p id="stat-furnace-cases">1234 Chests, 5 Stacks, 6 Items of coal</p></div>
+            <div class="box box-stat"><h3>Deaths:</h3>
+                <p id="stat-furnace-deaths">1234 Chests, 5 Stacks, 6 Items of coal</p></div>
+            <div class="box box-stat"><h3>Recovered:</h3>
+                <p id="stat-furnace-recovered">1234 Chests, 5 Stacks, 6 Items of coal</p></div>
+
+        </div>
+        <div class="column">
+            <div class="box box-img-container"><img class="box-img" alt="Minecraft Chest" src="img/Chest.png"></div>
+            <div class="box box-title-container"><h2>Single Chests:</h2></div>
+            <div class="box box-desc-container"><p>That would fill this many single chests</p></div>
+            <div class="box box-stat"><h3>Cases:</h3>
+                <p id="stat-chests-cases">1234 Chests, 5 Stacks, 6 Items</p></div>
+            <div class="box box-stat"><h3>Deaths:</h3>
+                <p id="stat-chests-deaths">1234 Chests, 5 Stacks, 6 Items</p></div>
+            <div class="box box-stat"><h3>Recovered:</h3>
+                <p id="stat-chests-recovered">1234 Chests, 5 Stacks, 6 Items</p></div>
+
+        </div>
+        <div class="column">
+            <div class="box box-img-container"><img class="box-img" alt="Minecraft Chest" src="img/Double_Chest.png">
+            </div>
+            <div class="box box-title-container"><h2>Double Chests:</h2></div>
+            <div class="box box-desc-container"><p>That would fill this many double chests</p></div>
+            <div class="box box-stat"><h3>Cases:</h3>
+                <p id="stat-dchests-cases">1234 Double Chests, 5 Stacks, 6 Items</p></div>
+            <div class="box box-stat"><h3>Deaths:</h3>
+                <p id="stat-dchests-deaths">1234 Double Chests, 5 Stacks, 6 Items</p></div>
+            <div class="box box-stat"><h3>Recovered:</h3>
+                <p id="stat-dchests-recovered">1234 Double Chests, 5 Stacks, 6 Items</p></div>
+
+        </div>
+        <div class="column">
+            <div class="box box-img-container"><img class="box-img" alt="Minecraft Chest" src="img/Steve.png"></div>
+            <div class="box box-title-container"><h2>Player Inventories:</h2></div>
+            <div class="box box-desc-container"><p>That would fill this many inventories</p></div>
+            <div class="box box-stat"><h3>Cases:</h3>
+                <p id="stat-inv-cases">1234 Inventories, 5 Stacks, 6 Items</p></div>
+            <div class="box box-stat"><h3>Deaths:</h3>
+                <p id="stat-inv-deaths">1234 Inventories, 5 Stacks, 6 Items</p></div>
+            <div class="box box-stat"><h3>Recovered:</h3>
+                <p id="stat-inv-recovered">1234 Inventories, 5 Stacks, 6 Items</p></div>
+        </div>
     </div>
+</div>
 </body>
 </html>
