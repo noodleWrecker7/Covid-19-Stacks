@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2020.
  * Developed by Adam Hodgkinson
- * Last modified 13/4/4 23:17
+ * Last modified 14/4/4 0:5
  *
  * Everything on this page, and other pages on the website, is subject to the copyright of Adam Hodgkinson, it may be freely used, copied, distributed and/or modified, however, full credit must be given
  * to me and any derived works should be released under the same license. I am not held liable for any claim, this software is provided as-is and without any warranty.
@@ -10,11 +10,19 @@
  *     Fontawesome
  *     Photonstorm's phaser.js
  */
+* {
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
 
 body {
     background-color: #fff0f4;
     padding: 0;
     margin: 0;
+    height: 100%;
 }
 
 
@@ -24,8 +32,8 @@ body {
     margin: 0;
     margin-top: -21px;
     font-family: Montserrat, sans-serif;
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
+    padding-top: 1.7%;
+    padding-bottom: 1.7%;
     border-top: solid green 21px;
     box-sizing: border-box;
 
@@ -38,6 +46,7 @@ h1 {
 
 .main-section {
     font-family: Montserrat, sans-serif;
+    min-height: 100%;
 }
 
 .region-title {
@@ -58,7 +67,6 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     justify-content: space-evenly;
-    margin-top: 5%;
 }
 
 .column {
@@ -71,8 +79,7 @@ h1 {
     margin-left: 0.3%;
     margin-right: 0.3%;
     /*max-width: fit-content;*/
-    margin-bottom: 4%;
-
+    margin-top: 5%;
 
 }
 
@@ -125,4 +132,31 @@ h3 {
 
 .square {
     padding-bottom: 98%;
+}
+
+.main-section {
+    min-height: 100%;
+    /* equal to footer height */
+    margin-bottom: -142px;
+}
+
+.main-section:after {
+    content: "";
+    display: block;
+}
+
+footer, .main-section:after {
+    height: 142px;
+}
+
+.site-footer {
+    background: orange;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    background-color: #979BA0;
+    padding-top: .2%;
 }
