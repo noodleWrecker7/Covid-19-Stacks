@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2020.
  * Developed by Adam Hodgkinson
- * Last modified 14/4/4 0:55
+ * Last modified 14/4/4 0:58
  *
  * Everything on this page, and other pages on the website, is subject to the copyright of Adam Hodgkinson, it may be freely used, copied, distributed and/or modified, however, full credit must be given
  * to me and any derived works should be released under the same license. I am not held liable for any claim, this software is provided as-is and without any warranty.
@@ -11,18 +11,6 @@
  *     Photonstorm's phaser.js
  */
 window.onload = function () {
-    console.log(getCookie("visited"))
-    console.log(getCookie("visited") == "yes")
-    if (getCookie("visited") != "yes") {
-        let req = new XMLHttpRequest();
-        req.open("PUT", "http://local.noodlewrecker.me:3000/visit");
-        req.send(JSON.stringify({site: "covid"}));
-        setCookie("visited", "yes", 69420)
-        console.log("cookie")
-    } else {
-        console.log("not")
-    }
-
     updateAll();
 }
 
